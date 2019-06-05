@@ -10,6 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 
 export class PostDetailComponent implements OnInit {
 
+    fetching = false;
     private post: PostModel;
 
     constructor(
@@ -17,6 +18,9 @@ export class PostDetailComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-
+        this.fetching = true;
+        setTimeout(() => {
+            this.fetching = false;
+        }, 333);
     }
 }

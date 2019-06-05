@@ -9,7 +9,7 @@ export const postsRoutes: Routes = [
     { path: '', component: PostListComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
-    { path: ':id', component: PostDetailComponent }
+    { path: 'post/:id', component: PostDetailComponent }
 ]
 
 @NgModule({

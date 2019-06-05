@@ -1,12 +1,12 @@
 <article class="post-item">
   <div class="post-item-image">
-    <a [routerLink]="['/', post.id]" target="_blank">
+    <a [routerLink]="['/post/', post.id]" target="_blank">
       <img src="{{post.image}}" alt="">
     </a>
   </div>
   <div class="post-item-body">
     <div class="padding-10">
-      <h2><a [routerLink]="['/', post.id]" target="_blank">{{post.title}}</a></h2>
+      <h2><a [routerLink]="['/post/', post.id]" target="_blank">{{post.title}}</a></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas, blanditiis impedit repellat harum, eaque saepe aspernatur quo magnam obcaecati dolor! Deleniti quod repellendus non iste architecto, voluptate excepturi velit.</p>
     </div>
 
@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class="pull-right">
-        <a [routerLink]="['/', post.id]" target="_blank">Continue Reading &raquo;</a>
+        <a [routerLink]="['/post/', post.id]" target="_blank">Continue Reading &raquo;</a>
       </div>
     </div>
   </div>
