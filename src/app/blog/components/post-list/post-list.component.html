@@ -1,0 +1,10 @@
+<div><app-shared-loading-spinner *ngIf="fetching"></app-shared-loading-spinner></div>
+<div *ngIf="!fetching">
+  <app-blog-post-list-element class="articles-container" [post]="post" *ngFor="let post of posts"></app-blog-post-list-element>
+  <nav>
+    <ul class="pager">
+      <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
+      <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </nav>
+</div>

@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-shared-aside',
-    templateUrl: './aside.header.html',
-    styleUrls: ['./aside.header.css']
+    templateUrl: './aside.component.html',
+    styleUrls: ['./aside.component.css']
 })
 
 export class AsideComponent {}

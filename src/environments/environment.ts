@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  paths: {
+    base: 'http://www.path_base.com',
+    posts: {
+      fetch: '/posts_fetch'
+    }
+  }
 };
 
 /*
